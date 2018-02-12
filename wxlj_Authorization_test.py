@@ -66,38 +66,6 @@ def get_house_list(url):
     r = requests.get(url, headers=headers)
     return r.json()
 
-def quest_str():
-
-    # 获取二手房数据列表
-    get_ershoufang_url = {
-        'url': 'https://wechat.lianjia.com/ershoufang/search?city_id=310000&condition=&query=&order=&offset=0&limit=10&sign='
-    }
-
-    """
-    获取二手房数据列表
-    'url': 'https://wechat.lianjia.com/ershoufang/search?city_id=310000&condition=&query=&order=&offset=0&limit=10&sign='
-    
-    获取房源详细信息
-    'url': 'https://wechat.lianjia.com/ershoufang/detail?house_code=107001753941&sign=',
-    
-    获取小区数据
-    https://wechat.lianjia.com/ershoufang/xiaoqu?resblock_id=5011000018313&sign=
-    
-    获取推荐数据
-    https://wechat.lianjia.com/ershoufang/recommend?city_id=310000&house_code=107001753941&sign=
-    
-    """
-
-    city_id = {
-
-        'sh': '310000',
-        'sz': '440300',
-        'tj': '120000',
-        'bj': '110000',
-        'gz': '440100',
-        'fs': '440600',
-    }
-
 
 if __name__ in "__main__":
     # 获取上海 二手房数据
