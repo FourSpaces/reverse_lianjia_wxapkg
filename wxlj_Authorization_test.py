@@ -5,8 +5,6 @@ import time
 import requests
 from urllib.parse import parse_qs, urlparse
 
-
-
 AUTHORIZATION_SIFFOX = "6e8566e348447383e16fdd1b233dbb49"
 AUTHORIZATION_PREFIX = 'ljwxapp:'
 
